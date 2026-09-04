@@ -195,6 +195,7 @@ nav
 }
 .home-content{
     width: 550px;
+    order: 1;
 }
 .home-content h3{
     font-size: 25px;
@@ -229,6 +230,7 @@ nav
 .home-img{
     display: flex;
     justify-content: center;
+    order: 2;
 }
 .circle{
     width: 390px;
@@ -727,4 +729,38 @@ section{
     font-size: 20px;
     padding: 10px;
     border-radius: 0.5rem;
+}
+
+/* --- Xaqiijinta meesha sawirku ku jiro (desktop) --- */
+
+/* About: sawirka bidix, qoraalka midig */
+.home-img1{ order: 1; }
+.about-text{ order: 2; }
+
+
+/* --- Responsive: si aan section-yadu isugu dul yaal-in shaashado yaryar --- */
+@media (max-width: 900px){
+    .home{
+        flex-direction: column;
+        height: auto;
+        padding: 120px 5% 60px;
+    }
+    .about{
+        grid-template-columns: 1fr;
+        padding-top: 100px;
+        text-align: center;
+    }
+    .home-img1{
+        order: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .about-text{
+        order: 2;
+    }
+    .about-text h2{ font-size: 40px; }
+    .circle{
+        width: 250px;
+        height: 250px;
+    }
 }
