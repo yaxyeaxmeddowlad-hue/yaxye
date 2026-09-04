@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <div class="top-header">
+            <div>
+                <h1>To<i>day</i></h1>
+                <p class="sub" id="sub">Start adding your tasks below.</p>
+            </div>
+
+            <button class="theme-btn" id="themeBtn">🌙</button>
+        </div>
+
+        <div class="input-row">
+            <input type="text" id="inp" placeholder="Add a task..." maxlength="100">
+            <button class="add" onclick="add()">+</button>
+        </div>
+
+        <ul id="list"></ul>
+
+        <p class="empty" id="empty">Nothing here — enjoy the quiet</p>
+
+    </div>
+
+    <script src="todo.js"></script>
+
+</body>
+</html>

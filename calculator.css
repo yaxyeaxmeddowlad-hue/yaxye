@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  }
+
+:root {
+--body-bg: linear-gradient(135deg, #d7d9dd, #f5f5f5);
+--calculator-bg: rgba(255, 255, 255, 0.75);
+--calculator-border: rgba(0, 0, 0, 0.08);
+
+--display-bg: rgba(255, 255, 255, 0.65);
+--display-text: #171717;
+--placeholder: #777;
+
+--button-bg: #eeeeee;
+--button-text: #202020;
+--button-shadow: rgba(0, 0, 0, 0.12);
+
+--operator-bg: #e1e5e8;
+--operator-color: #087f5b;
+
+--equal-bg: linear-gradient(135deg, #ff8a00, #ff5e00);
+--equal-text: #ffffff;
+
+--header-text: #222;
+--pro-bg: #222;
+--pro-text: #fff;
+
+}
+
+body.dark {
+--body-bg: linear-gradient(135deg, #050505, #151a22);
+--calculator-bg: rgba(20, 24, 30, 0.88);
+--calculator-border: rgba(255, 255, 255, 0.12);
+
+--display-bg: rgba(0, 0, 0, 0.25);
+--display-text: #ffffff;
+--placeholder: #aaa;
+
+--button-bg: #20252d;
+--button-text: #ffffff;
+--button-shadow: rgba(255, 255, 255, 0.06);
+
+--operator-bg: #252c35;
+--operator-color: #6dee0a;
+
+--equal-bg: linear-gradient(135deg, #ff8a00, #ff5e00);
+--equal-text: #ffffff;
+
+--header-text: #ffffff;
+--pro-bg: #00a8ff;
+--pro-text: #ffffff;
+
+}
+
+body {
+width: 100%;
+min-height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+background: var(--body-bg);
+
+transition: background 0.4s ease;
+
+}
+
+
+
+.theme-toggle {
+position: fixed;
+top: 25px;
+right: 25px;
+
+width: 48px;
+height: 48px;
+
+border: 1px solid var(--calculator-border);
+border-radius: 50%;
+
+background: var(--calculator-bg);
+color: var(--button-text);
+
+font-size: 21px;
+
+cursor: pointer;
+
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+transition: 0.3s ease;
+
+}
+
+.theme-toggle:hover {
+transform: rotate(15deg) scale(1.08);
+}
+
+.theme-toggle:active {
+transform: scale(0.9);
+}
+
+
+
+.calculator {
+width: 370px;
+
+padding: 22px;
+
+border: 1px solid var(--calculator-border);
+border-radius: 28px;
+
+background: var(--calculator-bg);
+
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+
+box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+transition:
+    background 0.4s ease,
+    box-shadow 0.4s ease,
+    border 0.4s ease;
+
+}
+
+
+
+.calculator-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+margin: 2px 5px 14px;
+
+color: var(--header-text);
+
+font-size: 17px;
+font-weight: 600;
+
+}
+
+.calculator-header small {
+padding: 4px 9px;
+
+border-radius: 8px;
+
+background: var(--pro-bg);
+color: var(--pro-text);
+
+font-size: 9px;
+letter-spacing: 1px;
+
+}
+
+
+
+input {
+width: 100%;
+height: 90px;
+
+border: none;
+outline: none;
+
+border-radius: 18px;
+
+padding: 15px 18px;
+margin-bottom: 12px;
+
+background: var(--display-bg);
+
+color: var(--display-text);
+
+text-align: right;
+
+font-size: 35px;
+font-weight: 600;
+
+box-shadow:
+    inset 0 2px 8px rgba(0, 0, 0, 0.08);
+
+transition: 0.3s ease;
+
+}
+
+input::placeholder {
+color: var(--placeholder);
+}
+
+
+
+
+.calculator div:not(.calculator-header) {
+display: flex;
+justify-content: space-between;
+}
+
+button {
+width: 66px;
+height: 66px;
+
+margin: 6px;
+
+border: none;
+border-radius: 18px;
+
+background: var(--button-bg);
+color: var(--button-text);
+
+font-size: 19px;
+font-weight: 500;
+
+cursor: pointer;
+
+box-shadow:
+    0 5px 12px var(--button-shadow);
+
+transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+
+}
+
+button:hover {
+transform: translateY(-3px);
+
+box-shadow:
+    0 9px 18px var(--button-shadow);
+
+}
+
+button:active {
+transform: scale(0.90);
+}
+
+
+
+
+.operator {
+background: var(--operator-bg);
+color: var(--operator-color);
+font-weight: 600;
+}
+
+/* Equal Button */
+
+.equal1Btn {
+background: var(--equal-bg);
+color: var(--equal-text);
+
+font-size: 23px;
+font-weight: 700;
+
+box-shadow:
+    0 8px 20px rgba(255, 100, 0, 0.3);
+
+}
+
+.equal1Btn:hover {
+box-shadow:
+0 12px 25px rgba(255, 100, 0, 0.4);
+}
+
+
+
+@media (max-width: 430px) {
+
+.calculator {
+    width: calc(100% - 28px);
+    padding: 18px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+
+    margin: 5px;
+
+    border-radius: 16px;
+}
+
+input {
+    height: 82px;
+    font-size: 30px;
+}
+
+.theme-toggle {
+    top: 15px;
+    right: 15px;
+}
+
+}

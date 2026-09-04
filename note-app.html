@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Notes App</title>
+<link rel="stylesheet" href="note.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">📝 Smart Notes</div>
+
+    <div class="header-right">
+
+        <button class="theme-btn" id="themeBtn">🌙</button>
+
+    </div>
+
+</header>
+
+
+<div class="container">
+
+    <div class="top">
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="search"
+                placeholder="Search your notes..."
+            >
+        </div>
+
+        <button class="add-btn" id="addBtn">
+            + Add Note
+        </button>
+
+    </div>
+
+
+    <div class="notes-container" id="notesContainer">
+
+    </div>
+
+</div>
+
+
+<!-- MODAL -->
+
+<div class="modal" id="modal">
+
+    <div class="modal-box">
+
+        <h2 id="modalTitle">Add New Note</h2>
+
+        <input
+            type="text"
+            id="noteTitle"
+            placeholder="Note title..."
+        >
+
+        <textarea
+            id="noteText"
+            placeholder="Write your note..."
+        ></textarea>
+
+
+        <div class="modal-actions">
+
+            <button class="cancel-btn" id="cancelBtn">
+                Cancel
+            </button>
+
+            <button class="save-btn" id="saveBtn">
+                Save Note
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="note.js"></script>
+
+
+
+</body>
+</html>
