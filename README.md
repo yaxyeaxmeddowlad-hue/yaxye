@@ -1,6 +1,5 @@
-#Hi 👋🏾, my name is Yaxye Axmed, and I'm a DevOps Engineer from Somaliland.
+Hi 👋🏾, my name is Yaxye Axmed, and I'm a DevOps Engineer from Somaliland.
 <div align="center">
-  <img src="https://raw.githubusercontent.com/YaxyeAxmed/YaxyeAxmed/output/github-contribution-grid-snake.svg" width="100%" />
 </di…
 [8:40 pm, 02/09/2026] yaxye: <div align="center">
 
@@ -9,12 +8,12 @@
 </div>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=650&lines=Welcome+to+my+GitHub+Profile!;I+am+a+Web+Developer;I+Love+Coding+and+Technology;Always+Learning+New+Things+🚀" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=650&lines=Welcome+to+my+GitHub+Profile!;I+am+a+Web+Developer;I+Love+Coding+and+Technology;Always+Learning+New+Things+" />
 </p>
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/YaxyeAxmed/YaxyeAxmed/output/github-contribution-grid-snake.svg" width="100%" />
+
 
 </div>
 
